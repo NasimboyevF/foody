@@ -1,0 +1,115 @@
+
+.menu
+{
+  &__title{
+    @include font(700,40px,50px);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &__text{
+    @include font(400,20px,30px,#24141585);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .menu-cards
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+  
+
+
+
+
+
+  }
+
+
+  .card
+  {
+    max-width: 260px;
+    box-shadow: 5px 5px 20px 0px #24141514;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+  
+    &__inner
+    {
+      padding: 16px;
+
+      &--info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+
+        h3{
+          @include font(700,16px,27px);
+        }
+
+        p{
+          @include font(700,14px,21px);
+          
+          &::before{
+            content: url("../../img/Vector-menu-star.svg");
+            bottom:0;
+
+          }
+
+        }
+
+      }
+
+
+      &--box{
+        display: flex;
+        align-items: center;
+        
+        p
+        {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          color: #241415;
+          display: flex;
+          align-items: center;
+
+          &::before
+          {
+            content: url("../../img/menu-delivery.svg");
+          }
+
+          
+
+
+        }
+
+      }
+
+
+    }
+  
+
+    
+
+
+    .button
+    {
+      padding: 15px 0;
+      width: 100%;
+    }
+  
+  }
+
+
+
+
+}

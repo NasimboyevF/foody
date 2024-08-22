@@ -1,0 +1,58 @@
+@import "./reset";
+
+
+
+
+@mixin font($a,$b,$c,$d:#241415 )
+{
+  font-family: "Outfit", sans-serif;
+  font-weight: $a;
+  font-size: $b;
+  line-height: $c;
+  color: $d;
+}
+
+
+.container
+{
+  width: 100%;
+  max-width: 1148px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.button
+{
+  @include font(400px,16px,24px,#FFF);
+  background-color: #F54749;
+  border-radius: 20px;
+  padding: 18px 25px;
+  box-shadow:   .3rem .3rem .6rem #0000003e, 
+  -.2rem -.2rem .5rem #0000003c;
+  &:active{
+    box-shadow:inset .2rem .2rem .5rem #0000003b, 
+    inset -.2rem -.2rem .5rem #00000024;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/menu";
+@import "./blocks/download";
+@import "./blocks/karusel";
+@import "./blocks/footer";

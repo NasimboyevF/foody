@@ -1,0 +1,430 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: "Outfit", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
+  border: none;
+  outline: none;
+  background-color: Transparent;
+}
+
+.container {
+  width: 100%;
+  max-width: 1148px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.button {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFF;
+  background-color: #F54749;
+  border-radius: 20px;
+  padding: 18px 25px;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.2431372549), -0.2rem -0.2rem 0.5rem rgba(0, 0, 0, 0.2352941176);
+}
+.button:active {
+  box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.231372549), inset -0.2rem -0.2rem 0.5rem rgba(0, 0, 0, 0.1411764706);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0;
+}
+.header nav ul {
+  width: 100%;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header nav a {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #241415;
+}
+.header .buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding-bottom: 150px;
+}
+.hero__wrapper {
+  max-width: 520px;
+}
+.hero .hero__start {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #F54749;
+  padding: 10px 20px 10px 20px;
+  background-color: hsla(359, 90%, 62%, 0.1);
+  border-radius: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid rgba(245, 71, 74, 0);
+}
+.hero .hero__start::before {
+  content: url("../../img/Frame-delivery.svg");
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  margin-left: 10px;
+  left: -63px;
+  transition: 3s;
+  z-index: -1;
+}
+.hero .hero__start::after {
+  content: url("../../img/Frame-delivery.svg");
+  position: relative;
+  width: 33px;
+  height: 33px;
+  margin-left: 10px;
+  transition: 3s;
+}
+.hero .hero__start:active {
+  border: 1px solid rgba(245, 71, 74, 0.1529411765);
+}
+.hero .hero__start:focus::before {
+  animation-name: asd;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  transition: all 3s linear 0s;
+}
+.hero .hero__start:focus::after {
+  animation-name: asd;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+@keyframes asd {
+  100% {
+    transform: translateX(187px);
+  }
+}
+.hero .hero__title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100px;
+  color: #141123;
+  padding: 10px 0 25px;
+}
+.hero .hero__title span {
+  color: #F54749;
+}
+.hero .hero-text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #241415;
+  opacity: 60%;
+  margin-bottom: 50px;
+}
+.hero .hero__buttons {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.hero .hero__buttons .button {
+  padding: 20px 57px;
+}
+.hero .hero__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .vidio-anim {
+  position: relative;
+  padding: 10px 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.hero .vidio-anim span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation-name: play;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  z-index: -1;
+}
+.hero .vidio-anim .span-2 {
+  animation-name: play-2;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  z-index: -1;
+}
+.hero .vidio-anim__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #FDE5E5;
+}
+@keyframes play {
+  100% {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 71, 74, 0.1019607843);
+  }
+}
+@keyframes play-2 {
+  100% {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245, 71, 74, 0.1019607843);
+  }
+}
+.hero .hero-customer {
+  display: flex;
+  align-items: center;
+}
+.hero .hero-customer__imgs {
+  display: flex;
+}
+.hero .hero-customer__imgs img {
+  position: relative;
+}
+.hero .hero-customer__imgs img:nth-child(2) {
+  left: -15px;
+}
+.hero .hero-customer__imgs img:nth-child(3) {
+  left: -30px;
+}
+.hero .hero-customer__imgs img:nth-child(4) {
+  left: -45px;
+}
+.hero .hero-customer__inner--title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #241415;
+}
+.hero .hero-customer__inner--info {
+  display: flex;
+  align-items: center;
+}
+.hero .hero-customer__inner--info img {
+  margin-right: 10px;
+}
+.hero .hero-customer__inner--info p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #241415;
+  margin-right: 5px;
+}
+.hero .hero-customer__inner--info span {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #3D3333;
+}
+.hero__box {
+  position: relative;
+}
+.hero__box-info {
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 1px solid rgba(255, 255, 255, 0);
+  animation-name: hero-info-border;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.031372549);
+  border-radius: 10px;
+}
+.hero__box-info--box {
+  max-width: 270px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.6980392157);
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.031372549);
+  display: flex;
+  align-items: center;
+}
+.hero__box-info--box p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #241415;
+  color: #241415;
+  opacity: 80%;
+}
+@keyframes hero-info-border {
+  100% {
+    border: 1px solid rgba(255, 255, 255, 0.6980392157);
+  }
+}
+
+.menu__title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color: #241415;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.menu__text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(36, 20, 21, 0.5215686275);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.menu .menu-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.menu .card {
+  max-width: 260px;
+  box-shadow: 5px 5px 20px 0px rgba(36, 20, 21, 0.0784313725);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.menu .card__inner {
+  padding: 16px;
+}
+.menu .card__inner--info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.menu .card__inner--info h3 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #241415;
+}
+.menu .card__inner--info p {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #241415;
+}
+.menu .card__inner--info p::before {
+  content: url("../../img/Vector-menu-star.svg");
+  bottom: 0;
+}
+.menu .card__inner--box {
+  display: flex;
+  align-items: center;
+}
+.menu .card__inner--box p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #241415;
+  display: flex;
+  align-items: center;
+}
+.menu .card__inner--box p::before {
+  content: url("../../img/menu-delivery.svg");
+}
+.menu .card .button {
+  padding: 15px 0;
+  width: 100%;
+}
