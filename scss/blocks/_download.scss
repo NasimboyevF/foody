@@ -1,2 +1,87 @@
 
+.download
+{
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &__inner{
+    max-width: 500px;
+  }
+
+  &__title{
+    @include font(700,40px,50px);
+    margin-bottom: 16px;
+  }
+
+
+  &__text{
+    max-width: 473px;
+    @include font(400,20px,30px,#24141577);
+    margin-bottom: 16px;
+  }
+
+  .imgs
+  {
+
+    position: relative;
+    width: 430px;
+    height: 610px;
+
+    img
+    {
+      position: absolute;
+      animation-duration:2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+      animation-timing-function: linear;
+
+      &:nth-child(2)
+      {
+        right: 0;
+        top: 0;
+        animation-name: phone-sekond;
+
+      }
+
+      
+      &:nth-child(1)
+      {
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+
+        animation-name: phone;
+      }
+
+
+    }
+
+  }
+
+
+@keyframes phone {
+  100%
+  {
+    transform: scale(1.04);
+  }
+}
+
+@keyframes phone-sekond {
+  100%
+  {
+    transform: scale(0.96);
+  }
+}
+
+
+}
+
+
+
+
+
 

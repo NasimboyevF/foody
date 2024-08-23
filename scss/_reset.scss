@@ -50,15 +50,27 @@ table {
 *
 {
 	font-family: "Outfit", sans-serif;
-
 	list-style: none;
 	text-decoration: none;
 	text-transform: none;
 	border: none;
 	outline: none;
 	background-color: Transparent;
-
 }
 
+button
+{
+	&:active
+	{
+		border: none;
+		outline: none;
+	}
+	border: none;
+	outline: none;
+}
 
+a
+{
+	text-decoration: none;
+}
 
